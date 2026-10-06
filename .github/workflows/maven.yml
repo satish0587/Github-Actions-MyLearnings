@@ -14,14 +14,12 @@ jobs:
       run: |
        sudo apt-get update -y
        sudo apt-get install -y maven
+       sudo apt-get install -y git
+       sudo apt-get install -y httpd
 
     - name: Check Maven
       run: |
        mvn --version
-  
-   steps: 
-    - name: Install Git
-      run: |
-       sudo apt-get install git
+
       
    
