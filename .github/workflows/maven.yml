@@ -19,4 +19,9 @@ jobs:
       run: |
        mvn --version
   
-    
+   steps: 
+    - name: Install Git
+      run: |
+       sudo apt-get git
+      
+   
