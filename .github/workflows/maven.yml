@@ -22,6 +22,6 @@ jobs:
    steps: 
     - name: Install Git
       run: |
-       sudo apt-get git
+       sudo apt-get install git
       
    
