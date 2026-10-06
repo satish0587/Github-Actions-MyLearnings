@@ -15,11 +15,16 @@ jobs:
        sudo apt-get update -y
        sudo apt-get install -y maven
        sudo apt-get install -y git
-       sudo apt-get install -y httpd
+       
+     - name: Install Apache2
+       run: |
+        sudo apt-get update
+        sudo apt-get install -y apache2
 
     - name: Check Maven
       run: |
        mvn --version
+       apache2 -v
 
       
    
