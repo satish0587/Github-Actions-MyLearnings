@@ -1,4 +1,5 @@
 name: Java CI pipeline
+
 on:
  workflow_dispatch
 
