@@ -2,18 +2,18 @@ name: Install Docker
 
 on:
   push:
-   branches:
-     - 'main'
+    branches:
+      - 'main'
 
 jobs:
- install-docker: 
-  runs-on: ubuntu-latest
+  install-docker: 
+    runs-on: ubuntu-latest
 
   steps:
     - name: Install Docker
       run: |
-       sudo apt-get update -y
-       sudo apt-get install -y docker.io
+        sudo apt-get update -y
+        sudo apt-get install -y docker.io
 
     - name: Check docker
      run: docker --version
