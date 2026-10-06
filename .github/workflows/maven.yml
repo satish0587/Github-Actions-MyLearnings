@@ -3,7 +3,7 @@ name: Java CI pipeline
 on:
  push:
   branches:
-    - 'main'
+    - '!main'
 
 jobs:
  install-maven:
