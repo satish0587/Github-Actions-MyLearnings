@@ -3,7 +3,7 @@ name: Install Docker
 on:
   push:
    branches:
-     - main
+     - 'main'
 
 jobs:
  install-docker: 
